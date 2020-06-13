@@ -35,8 +35,8 @@ This is a [remark][] [preset][] defining a number of [warnings](#warnings).
 
    ```json
    "scripts": {
-     "format-md": "remark --output --quiet --frail ."
-     "test-md": "remark --quiet --frail ."
+     "format-md": "remark --output --quiet --frail .",
+     "test-md": "remark --quiet --frail .",
      "test": "npm run test-md"
    },
    ```
