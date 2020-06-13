@@ -24,7 +24,7 @@ jobs:
     - name: Check out repository
       uses: actions/checkout@v2
     - name: Set up Node.js v${{ matrix.node-version }}
-      uses: actions/setup-node@v1
+      uses: actions/setup-node@v2.0.0
       with:
         node-version: ${{ matrix.node-version }}
     - run: npm ci
