@@ -66,7 +66,7 @@ mentioned: <!-- sorted alphabetically -->
 * [remark-lint-final-definition][]: definitions not at end of file.
 * [remark-lint-final-newline][]: missing `\n` at end of file.
 * [remark-lint-hard-break-spaces][]: > 2 spaces for a [hard line
-  break][markdown-hard-line-breaks].
+  break][md-hard-line-breaks].
 * [remark-lint-heading-increment][]: headings increment > 1 level.
 * [remark-lint-heading-style][]: heading not [ATX][md-atx-headings].
 * [remark-lint-linebreak-style][]: end-of-line character not `\n` (as in Unix).
@@ -139,10 +139,10 @@ The following plugins were considered and rejected:
 
 [author]: https://github.com/spl
 [license]: ./license.md
-[markdown-atx-headings]: https://spec.commonmark.org/0.29/#atx-headings
-[markdown-autolinks]: https://spec.commonmark.org/0.29/#autolinks
-[markdown-hard-line-breaks]: https://spec.commonmark.org/0.29/#hard-line-breaks
-[markdown-shortcut]: https://spec.commonmark.org/0.29/#shortcut-reference-link
+[md-atx-headings]: https://spec.commonmark.org/0.29/#atx-headings
+[md-autolinks]: https://spec.commonmark.org/0.29/#autolinks
+[md-hard-line-breaks]: https://spec.commonmark.org/0.29/#hard-line-breaks
+[md-shortcut]: https://spec.commonmark.org/0.29/#shortcut-reference-link
 [npm-dependencies]: https://docs.npmjs.com/specifying-dependencies-and-devdependencies-in-a-package-json-file
 [npm-run-script]: https://docs.npmjs.com/cli/run-script
 [npm]: https://docs.npmjs.com/cli/install
