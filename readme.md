@@ -6,14 +6,17 @@
 
 > Markdown processor for the Stoicism Compendium.
 
-This is a [remark][] [preset][] defining a number of [warnings](#warnings).
+This is a [**remark**][remark] [preset][] defining a number of
+[warnings](#warnings).
 
 <!-- Sections -->
 
-## Installation
+## Installing and Configuring
 
-1. Install this package as a [development dependency][npm-dependencies] with
-   [`npm`][npm]:
+The following instructions describe one way of using this package with
+[**npm**][npm].
+
+1. Install this package as a [development dependency][npm-dependencies]:
 
    ```sh
    npm install --save-dev remark-preset-stoicism
@@ -30,8 +33,8 @@ This is a [remark][] [preset][] defining a number of [warnings](#warnings).
    },
    ```
 
-3. Configure one or more [script][npm-run-script]s to run `remark`. Here is an
-   example `package.json` configuration:
+3. Configure one or more [run-scripts][npm-run-script] to run `remark`. Here is
+   an example `package.json` configuration:
 
    ```json
    "scripts": {
@@ -50,85 +53,82 @@ This is a [remark][] [preset][] defining a number of [warnings](#warnings).
 Each of the following plugins is configured to emit warnings for the issue
 mentioned: <!-- sorted alphabetically -->
 
-* [remark-lint-blockquote-indentation][]: block quotes indentation ≠ 2 spaces.
-* [remark-lint-checkbox-character-style][]: check box not `x` for checked and
-  ` ` for unchecked.
-* [remark-lint-code-block-style][]: code block style not fenced.
-* [remark-lint-definition-case][]: definitions are not lowercase.
-* [remark-lint-definition-spacing][]: consecutive spaces in definitions.
-* [remark-lint-emphasis-marker][]: emphasis marker not `_`.
-* [remark-lint-fenced-code-flag][]: fenced code flag not provided.
-* [remark-lint-fenced-code-marker][]: fenced code marker not `\``.
-* [remark-lint-file-extension][]: file name does not have the extension `.md`.
-* [remark-lint-final-definition][]: definitions are not at end of file.
-* [remark-lint-final-newline][]: missing `\n` at end of file.
-* [remark-lint-hard-break-spaces][]: more than 2 spaces for a [hard line
-  break][markdown-hard-line-breaks].
-* [remark-lint-heading-increment][]: headings increment more than 1 level.
-* [remark-lint-heading-style][]: heading not [ATX][markdown-atx-headings].
-* [remark-lint-linebreak-style][]: end-of-line character not `\n` (as in Unix).
-* [remark-lint-link-title-style][]: link title does not use `"`.
-* [remark-lint-list-item-bullet-indent][]: indented list item bullets.
-* [remark-lint-list-item-content-indent][]: list item content has mixed
-  indentation.
-* [remark-lint-list-item-indent][]: spaces after list bullet ≠ 1. Fewer
-  characters to type provides easier writability in the unrendered text.
-* [remark-lint-maximum-line-length][]: lines longer than 80 characters.
-* [remark-lint-no-auto-link-without-protocol][]: [autolinks][markdown-autolinks]
+* [remark-lint-blockquote-indentation][] – block quotes indentation ≠ 2 spaces.
+* [remark-lint-checkbox-character-style][] – check box not `x` for checked, ` `
+  for unchecked.
+* [remark-lint-code-block-style][] – code block not fenced.
+* [remark-lint-definition-case][] – definitions not lowercase.
+* [remark-lint-definition-spacing][] – consecutive spaces in definitions.
+* [remark-lint-emphasis-marker][] – emphasis marker not `_`.
+* [remark-lint-fenced-code-flag][] – fenced code flag not provided.
+* [remark-lint-fenced-code-marker][] – fenced code marker not `\``.
+* [remark-lint-file-extension][] – file name without extension `.md`.
+* [remark-lint-final-definition][] – definitions not at end of file.
+* [remark-lint-final-newline][] – missing `\n` at end of file.
+* [remark-lint-hard-break-spaces][] – > 2 spaces for a [hard line
+  break][md-hard-line-breaks].
+* [remark-lint-heading-increment][] – headings increment > 1 level.
+* [remark-lint-heading-style][] – heading not [ATX][md-atx-headings].
+* [remark-lint-linebreak-style][] – end-of-line character not `\n` (as in Unix).
+* [remark-lint-link-title-style][] – link title not using `"`.
+* [remark-lint-list-item-bullet-indent][] – indented list item bullets.
+* [remark-lint-list-item-content-indent][] – mixed indentation in list item
+  content.
+* [remark-lint-list-item-indent][] – spaces after list bullet ≠ 1.
+* [remark-lint-maximum-line-length][] – lines longer than 80 characters.
+* [remark-lint-no-auto-link-without-protocol][] – [autolinks][md-autolinks]
   without protocol.
-* [remark-lint-no-blockquote-without-marker][]: blank lines without `>` in block
-  quote.
-* [remark-lint-no-consecutive-blank-lines][]: consecutive blank lines.
-* [remark-lint-no-duplicate-defined-urls][]: multiple definitions with same URL.
-* [remark-lint-no-duplicate-definitions][]: duplicate definitions.
-* [remark-lint-no-duplicate-headings][]: duplicate headings.
-* [remark-lint-no-empty-url][]: empty URLs.
-* [remark-lint-no-file-name-articles][]: file name starts with an article.
-* [remark-lint-no-file-name-consecutive-dashes][]: file name contains
+* [remark-lint-no-blockquote-without-marker][] – blank lines without `>` in
+  block quote.
+* [remark-lint-no-consecutive-blank-lines][] – consecutive blank lines.
+* [remark-lint-no-duplicate-defined-urls][] – duplicate definition URLs.
+* [remark-lint-no-duplicate-definitions][] – duplicate definitions.
+* [remark-lint-no-duplicate-headings][] – duplicate headings.
+* [remark-lint-no-empty-url][] – empty URLs.
+* [remark-lint-no-file-name-articles][] – file name starts with an article.
+* [remark-lint-no-file-name-consecutive-dashes][] – file name contains
   consecutive dashes.
-* [remark-lint-no-file-name-irregular-characters][]: file name contains
+* [remark-lint-no-file-name-irregular-characters][] – file name contains
   “irregular” characters.
-* [remark-lint-no-file-name-mixed-case][]: file name uses mixed uppercase and
+* [remark-lint-no-file-name-mixed-case][] – file name uses mixed uppercase and
   lowercase characters.
-* [remark-lint-no-file-name-outer-dashes][]: file name contains initial or final
-  dashes.
-* [remark-lint-no-heading-content-indent][]: indented heading text.
-* [remark-lint-no-inline-padding][]: padded content for emphasis, strong, etc.
-* [remark-lint-no-literal-urls][]: literal URLs.
-* [remark-lint-no-multiple-toplevel-headings][]: more than 1 top-level heading
-  (i.e. the one with `#`).
-* [remark-lint-no-reference-like-url][]: references match URLs.
-* [remark-lint-no-shell-dollars][]: shell code starts with `$`.
-* [remark-lint-no-shortcut-reference-image][]: [shortcut][markdown-shortcut]
+* [remark-lint-no-file-name-outer-dashes][] – file name contains initial or
+  final dashes.
+* [remark-lint-no-heading-content-indent][] – indented heading text.
+* [remark-lint-no-inline-padding][] – padded content for emphasis, strong, etc.
+* [remark-lint-no-literal-urls][] – literal URLs.
+* [remark-lint-no-multiple-toplevel-headings][] – > 1 top-level heading (i.e.
+  the one with `#`).
+* [remark-lint-no-reference-like-url][] – references match URLs.
+* [remark-lint-no-shell-dollars][] – shell code starts with `$`.
+* [remark-lint-no-shortcut-reference-image][] – [shortcut][md-shortcut]
   reference images.
-* [remark-lint-no-shortcut-reference-link][]: [shortcut][markdown-shortcut]
-  reference links.
-* [remark-lint-no-table-indentation][]: indented tables.
-* [remark-lint-no-tabs][]: tabs used for indentation.
-* [remark-lint-no-undefined-references][]: references to undefined definitions.
-* [remark-lint-no-unused-definitions][]: unused definitions.
-* [remark-lint-ordered-list-marker-style][]: ordered list marker does not use
-  `.`.
-* [remark-lint-ordered-list-marker-value][]: ordered lists do not increment
-  marker values. This provides readability in the unrendered text.
-* [remark-lint-rule-style][]: rule style not `---`.
-* [remark-lint-strong-marker][]: strong emphasis marker not `*`.
-* [remark-lint-table-cell-padding][]: table cell not padded.
-* [remark-lint-table-pipe-alignment][]: unaligned tables.
-* [remark-lint-table-pipes][]: table rows not fenced with pipes.
-* [remark-lint-unordered-list-marker-style][]: unordered list marker not `\*`.
-* [remark-validate-links][]: invalid links to local files and headings. This
-  does not check URLs.
+* [remark-lint-no-shortcut-reference-link][] – [shortcut][md-shortcut] reference
+  links.
+* [remark-lint-no-table-indentation][] – indented tables.
+* [remark-lint-no-tabs][] – tabs used for indentation.
+* [remark-lint-no-undefined-references][] – references to undefined definitions.
+* [remark-lint-no-unused-definitions][] – unused definitions.
+* [remark-lint-ordered-list-marker-style][] – ordered list marker not using `.`.
+* [remark-lint-ordered-list-marker-value][] – ordered lists with
+  non-incrementing marker values.
+* [remark-lint-rule-style][] – rule style not `---`.
+* [remark-lint-strong-marker][] – strong emphasis marker not `*`.
+* [remark-lint-table-cell-padding][] – table cell not padded.
+* [remark-lint-table-pipe-alignment][] – unaligned tables.
+* [remark-lint-table-pipes][] – table row not fenced with pipes.
+* [remark-lint-unordered-list-marker-style][] – unordered list marker not `*`.
+* [remark-validate-links][] – invalid link or image to local files and headings.
 
 ### Not Used
 
 The following plugins were considered and rejected:
 
-* [remark-lint-maximum-heading-length][]: headings too long. We don't want to
+* [remark-lint-maximum-heading-length][] – headings too long. We don't want to
   put a limit on headings.
-* [remark-lint-no-emphasis-as-heading][]: emphasis or strong emphasis used as
+* [remark-lint-no-emphasis-as-heading][] – emphasis or strong emphasis used as
   heading. Sometimes, that's what we want.
-* [remark-lint-no-heading-punctuation][]: heading ends with punctuation. We
+* [remark-lint-no-heading-punctuation][] – heading ends with punctuation. We
   sometimes want punctuation.
 
 ## License
@@ -139,10 +139,10 @@ The following plugins were considered and rejected:
 
 [author]: https://github.com/spl
 [license]: ./license.md
-[markdown-atx-headings]: https://spec.commonmark.org/0.29/#atx-headings
-[markdown-autolinks]: https://spec.commonmark.org/0.29/#autolinks
-[markdown-hard-line-breaks]: https://spec.commonmark.org/0.29/#hard-line-breaks
-[markdown-shortcut]: https://spec.commonmark.org/0.29/#shortcut-reference-link
+[md-atx-headings]: https://spec.commonmark.org/0.29/#atx-headings
+[md-autolinks]: https://spec.commonmark.org/0.29/#autolinks
+[md-hard-line-breaks]: https://spec.commonmark.org/0.29/#hard-line-breaks
+[md-shortcut]: https://spec.commonmark.org/0.29/#shortcut-reference-link
 [npm-dependencies]: https://docs.npmjs.com/specifying-dependencies-and-devdependencies-in-a-package-json-file
 [npm-run-script]: https://docs.npmjs.com/cli/run-script
 [npm]: https://docs.npmjs.com/cli/install
