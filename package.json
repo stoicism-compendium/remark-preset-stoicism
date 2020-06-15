@@ -84,12 +84,12 @@
   },
   "scripts": {
     "depcheck": "depcheck",
-    "eslint:format": "eslint --fix '**/*.js'",
-    "eslint:test": "eslint '**/*.js'",
-    "format": "npm run eslint:format && npm run remark:format && npm run eslint:format",
-    "remark:format": "remark --output --quiet --frail .",
-    "remark:test": "remark --quiet --frail .",
-    "test": "npm run depcheck && npm run eslint:test && npm run remark:test && npm run eslint:test"
+    "format": "npm run format-md && npm run format-js",
+    "format-js": "eslint --fix '**/*.js'",
+    "format-md": "remark --output --quiet --frail .",
+    "test": "npm run test-md && npm run test-js && npm run depcheck",
+    "test-js": "eslint '**/*.js'",
+    "test-md": "remark --quiet --frail ."
   },
   "eslintConfig": {
     "root": true,
