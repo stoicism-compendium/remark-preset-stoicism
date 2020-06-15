@@ -2,6 +2,8 @@
 
 <!-- Badges -->
 
+![tests][tests-badge]
+
 <!-- Brief description -->
 
 > Markdown processor for the Stoicism Compendium.
@@ -205,3 +207,4 @@ The following plugins were considered and rejected:
 [remark-lint-unordered-list-marker-style]: https://github.com/remarkjs/remark-lint/tree/master/packages/remark-lint-unordered-list-marker-style
 [remark-validate-links]: https://github.com/remarkjs/remark-validate-links
 [remark]: https://github.com/remarkjs/remark
+[tests-badge]: https://github.com/stoicism-compendium/remark-preset-stoicism/workflows/tests/badge.svg
