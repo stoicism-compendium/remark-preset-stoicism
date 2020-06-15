@@ -31,6 +31,7 @@ exports.plugins = [
   [require('remark-lint-strong-marker'), '*'],
   [require('remark-lint-table-cell-padding'), 'padded'],
   [require('remark-lint-unordered-list-marker-style'), '*'],
+  [require('remark-retext'), require('unified')().use(require('retext-preset-stoicism'))],
   require('remark-lint-definition-case'),
   require('remark-lint-definition-spacing'),
   require('remark-lint-final-definition'),
