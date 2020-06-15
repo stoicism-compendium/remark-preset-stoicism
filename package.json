@@ -9,7 +9,7 @@
     "stoicism"
   ],
   "repository": "stoicism-compendium/remark-preset-stoicism",
-  "bugs": "https://github.com/stoicism-compendium/retext-preset-stoicism/issues",
+  "bugs": "https://github.com/stoicism-compendium/remark-preset-stoicism/issues",
   "author": "Sean Leather (https://github.com/spl)",
   "files": [
     "index.js"
@@ -67,7 +67,10 @@
     "remark-lint-table-pipe-alignment": "^2.0.0",
     "remark-lint-table-pipes": "^2.0.0",
     "remark-lint-unordered-list-marker-style": "^2.0.0",
-    "remark-validate-links": "^10.0.0"
+    "remark-retext": "^4.0.0",
+    "remark-validate-links": "^10.0.0",
+    "retext-preset-stoicism": "git+https://github.com/stoicism-compendium/retext-preset-stoicism.git",
+    "unified": "^9.0.0"
   },
   "devDependencies": {
     "depcheck": "^0.9.2",

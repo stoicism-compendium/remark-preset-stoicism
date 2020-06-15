@@ -124,10 +124,10 @@ mentioned: <!-- sorted alphabetically -->
 
 The following plugins were considered and rejected:
 
-* [remark-lint-maximum-heading-length][] – headings too long. We don't want to
+* [remark-lint-maximum-heading-length][] – headings too long. We don’t want to
   put a limit on headings.
 * [remark-lint-no-emphasis-as-heading][] – emphasis or strong emphasis used as
-  heading. Sometimes, that's what we want.
+  heading. Sometimes, that’s what we want.
 * [remark-lint-no-heading-punctuation][] – heading ends with punctuation. We
   sometimes want punctuation.
 
