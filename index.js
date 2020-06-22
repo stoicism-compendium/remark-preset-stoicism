@@ -14,7 +14,10 @@ exports.settings = {
 exports.plugins = [
   // Keep these sorted alphabetically.
   [require('remark-lint-blockquote-indentation'), 2],
-  [require('remark-lint-checkbox-character-style'), {checked: 'x', unchecked: ' '}],
+  [
+    require('remark-lint-checkbox-character-style'),
+    {checked: 'x', unchecked: ' '},
+  ],
   [require('remark-lint-code-block-style'), 'fenced'],
   [require('remark-lint-emphasis-marker'), '_'],
   [require('remark-lint-fenced-code-flag'), {allowEmpty: false}],
@@ -31,7 +34,10 @@ exports.plugins = [
   [require('remark-lint-strong-marker'), '*'],
   [require('remark-lint-table-cell-padding'), 'padded'],
   [require('remark-lint-unordered-list-marker-style'), '*'],
-  [require('remark-retext'), require('unified')().use(require('retext-preset-stoicism'))],
+  [
+    require('remark-retext'),
+    require('unified')().use(require('retext-preset-stoicism')),
+  ],
   require('remark-lint-definition-case'),
   require('remark-lint-definition-spacing'),
   require('remark-lint-final-definition'),
