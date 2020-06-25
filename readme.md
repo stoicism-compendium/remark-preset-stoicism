@@ -2,7 +2,7 @@
 
 <!-- Badges -->
 
-![tests][tests-badge]
+![test][test-badge]
 
 <!-- Brief description -->
 
@@ -199,7 +199,9 @@ npm run format-md
 [`remark-lint-table-pipe-alignment`]: https://github.com/remarkjs/remark-lint/tree/master/packages/remark-lint-table-pipe-alignment
 [`remark-lint-table-pipes`]: https://github.com/remarkjs/remark-lint/tree/master/packages/remark-lint-table-pipes
 [`remark-lint-unordered-list-marker-style`]: https://github.com/remarkjs/remark-lint/tree/master/packages/remark-lint-unordered-list-marker-style
+[`remark-retext`]: https://github.com/remarkjs/remark-retext
 [`remark-validate-links`]: https://github.com/remarkjs/remark-validate-links
+[`retext-preset-stoicism`]: https://github.com/stoicism-compendium/retext-preset-stoicism
 [author]: https://github.com/spl
 [license]: ./license.md
 [md-atx-headings]: https://spec.commonmark.org/0.29/#atx-headings
@@ -212,8 +214,6 @@ npm run format-md
 [preset]: https://github.com/unifiedjs/unified#preset
 [remark-cli]: https://github.com/remarkjs/remark/tree/master/packages/remark-cli
 [remark]: https://github.com/remarkjs/remark
-[tests-badge]: https://github.com/stoicism-compendium/remark-preset-stoicism/workflows/tests/badge.svg
+[test-badge]: https://github.com/stoicism-compendium/remark-preset-stoicism/workflows/test/badge.svg
 [unified-engine-config]: https://github.com/unifiedjs/unified-engine/blob/main/doc/configure.md
 [yarn]: https://yarnpkg.com/
-[`retext-preset-stoicism`]: https://github.com/stoicism-compendium/retext-preset-stoicism
-[`remark-retext`]: https://github.com/remarkjs/remark-retext
