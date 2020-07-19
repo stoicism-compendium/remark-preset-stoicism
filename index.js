@@ -13,6 +13,7 @@ exports.settings = {
 
 exports.plugins = [
   // Keep these sorted alphabetically.
+  [require('remark-frontmatter')],
   [require('remark-lint-blockquote-indentation'), 2],
   [
     require('remark-lint-checkbox-character-style'),
