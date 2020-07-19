@@ -1,6 +1,6 @@
 {
   "name": "remark-preset-stoicism",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Markdown processor for the Stoicism Compendium",
   "license": "BlueOak-1.0.0",
   "keywords": [
