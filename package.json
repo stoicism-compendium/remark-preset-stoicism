@@ -15,7 +15,7 @@
     "index.js"
   ],
   "dependencies": {
-    "remark-frontmatter": "^2.0.0",
+    "remark-frontmatter": "^4.0.0",
     "remark-lint-blockquote-indentation": "^2.0.0",
     "remark-lint-checkbox-character-style": "^3.0.0",
     "remark-lint-code-block-style": "^2.0.0",
